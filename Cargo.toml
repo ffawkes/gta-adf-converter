@@ -1,0 +1,17 @@
+[package]
+name = "gta-adf-converter"
+version = "1.0.0"
+edition = "2024"
+description = "Fast, dependency-free converter between ADF (GTA Vice City audio) and MP3 files."
+license = "MIT"
+repository = "https://github.com/ffawkes/gta-adf-converter"
+readme = "README.md"
+categories = ["command-line-utilities", "multimedia"]
+keywords = ["adf", "mp3", "xor", "gta", "vice-city"]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
